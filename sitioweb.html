@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sitio personal de Mathias Hector Ayllon Pareja (Mathortas), estudiante de Ciencia de la Computación.">
+    <meta name="keywords" content="Mathias Hector Ayllon Pareja, Mathortas, Ciencia de la Computación, Programación, Videojuegos, Libros, Series de TV">
+    <meta name="author" content="Mathias Hector Ayllon Pareja">
+    <title>Mathias Hector Ayllon Pareja - Ciencia de la Computación</title>
+
+    <!-- Fuentes -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap">
+
+    <style>
+        /* Estilos generales */
+        body {
+            background-color: #263238;
+            color: #ECEFF1;
+            font-family: 'Alfa Slab One', cursive;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        /* Barra lateral */
+        .sidebar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 250px;
+            height: 100%;
+            background-color: #1b5e20;
+            color: #ECEFF1;
+            padding: 20px;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
+            text-align: center;
+        }
+
+        .sidebar h1 {
+            font-size: 24px;
+            margin: 0;
+            color: #FFEE58;
+        }
+
+        .sidebar p {
+            color: #A5D6A7;
+            font-size: 18px;
+        }
+
+        .sidebar nav a {
+            display: block;
+            color: #A5D6A7;
+            margin: 10px 0;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+
+        .sidebar nav a:hover {
+            color: #81C784;
+        }
+
+        /* Contenedor principal para el contenido */
+        .content {
+            margin-left: 270px;
+            padding: 20px;
+            flex: 1;
+        }
+
+        header, footer {
+            background-color: #1b5e20;
+            color: #ECEFF1;
+            padding: 10px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            transition: background-color 0.3s;
+        }
+
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+
+        section {
+            margin-bottom: 30px;
+            background-color: #455A64;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s, background-color 0.3s;
+        }
+
+        section:hover {
+            transform: translateY(-5px);
+            background-color: #546E7A;
+        }
+
+        h2, h3 {
+            color: #FFEE58;
+        }
+
+        /* Efectos de animación */
+        .fade-in {
+            opacity: 0;
+            animation: fadeIn 1.5s forwards;
+            transition: opacity 0.3s;
+        }
+
+        .slide-up {
+            transform: translateY(30px);
+            opacity: 0;
+            animation: slideUp 1.5s forwards;
+            transition: transform 0.3s;
+        }
+
+        .slide-down {
+            transform: translateY(-30px);
+            opacity: 0;
+            animation: slideDown 1.5s forwards;
+            transition: transform 0.3s;
+        }
+
+        /* Definición de animaciones */
+        @keyframes fadeIn {
+            to { opacity: 1; }
+        }
+
+        @keyframes slideUp {
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        @keyframes slideDown {
+            to { transform: translateY(0); opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Barra lateral fija -->
+<div class="sidebar">
+    <h1>Mathias H. Ayllon</h1>
+    <p><span class="highlight">Alias:</span> Mathortas</p>
+    <nav>
+        <a href="#resumen">Resumen</a>
+        <a href="#cursos">Cursos</a>
+        <a href="#likes-dislikes">Likes & Dislikes</a>
+        <a href="#futuro">Intereses a Futuro</a>
+    </nav>
+</div>
+
+<!-- Contenido principal -->
+<div class="content">
+    <header>
+        <h1>Mathias Hector Ayllon Pareja</h1>
+    </header>
+
+    <main>
+        <!-- Resumen -->
+        <section id="resumen" class="slide-up">
+            <h2>Resumen</h2>
+            <p>Soy Mathias Hector Ayllon Pareja, estudiante de Ciencia de la Computación en el segundo semestre. Soy fan de los <strong>Dallas Mavericks</strong> y el <strong>FC Barcelona</strong>. ¡Amo la música, los videojuegos, y tengo una gran pasión por la programación!</p>
+        </section>
+
+        <!-- Cursos por semestre -->
+        <section id="cursos" class="fade-in">
+            <h2>Cursos por Semestre</h2>
+            <h3>Semestre 1</h3>
+            <ul>
+                <li>Programación de Videojuegos</li>
+                <li>Matemática 1</li>
+                <li>Estructuras Discretas 1</li>
+                <li>Metodología del Estudio</li>
+                <li>Introducción a la Vida Universitaria</li>
+                <li>Comunicación</li>
+            </ul>
+
+            <h3>Semestre 2</h3>
+            <ul>
+                <li>Ciencia de la Computación</li>
+                <li>Matemática 2</li>
+                <li>Estructuras Discretas 2</li>
+                <li>Introducción a Ciencia de la Computación</li>
+                <li>Introducción a la Filosofía</li>
+                <li>Persona, Matrimonio y Familia</li>
+            </ul>
+        </section>
+
+        <!-- Likes & Dislikes -->
+        <section id="likes-dislikes" class="slide-down">
+            <h2>Likes & Dislikes</h2>
+            <h3>Likes</h3>
+            <ul>
+                <li>🐱 Gatos</li>
+                <li>🎮 Videojuegos</li>
+                <li>📺 Series (Breaking Bad, From, The Outsider)</li>
+                <li>📖 Leer (Stephen King)</li>
+                <li>👨‍💻 Programar</li>
+                <li>🏀 Basket y ⚽ Fútbol</li>
+                <li>🎵 Música (Rap, Rock / Kendrick Lamar, J Cole, Charly García, NBT, Kanye West, Soda Stereo, Metro Boomin)</li>
+                <li>🎮 Pokemon</li>
+            </ul>
+
+            <h3>Dislikes</h3>
+            <ul>
+                <li>💀 Estructuras Discretas</li>
+                <li>🦟 Insectos</li>
+                <li>👴 Profesores fósiles</li>
+            </ul>
+        </section>
+
+        <!-- Intereses a futuro -->
+        <section id="futuro" class="fade-in">
+            <h2>Intereses a Futuro</h2>
+            <p>Mis intereses a futuro incluyen:</p>
+            <ul>
+                <li>🔐 Ciberseguridad -> Ethical Hacking</li>
+                <li>🎮 Desarrollo de Videojuegos</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Mathias Hector Ayllon Pareja. Todos los derechos reservados.</p>
+    </footer>
+</div>
+
+</body>
+</html>
